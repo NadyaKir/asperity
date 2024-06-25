@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,10 +11,10 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-      dark: {
+      colors: {
         blue: "#001A72",
         darkBlue: "#0047BB",
-        orange: "#FA4616",
+        customOrange: "#FA4616",
         accent: "#0047BB",
         success: "#2E7D32",
         bgPrimary: "#141414",

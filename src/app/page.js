@@ -1,7 +1,14 @@
+import Header from "@/components/ui/Header";
+import ReturnButton from "@/components/ui/ReturnButton";
+
 export default function Home() {
   return (
-    <main>
-      <p>Hello world</p>
-    </main>
+    <>
+      <Header />
+      <ReturnButton> Вернуться к сотрудникам</ReturnButton>
+      <main>
+        <section></section>
+      </main>
+    </>
   );
 }
