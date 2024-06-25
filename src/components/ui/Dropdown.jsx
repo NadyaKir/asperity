@@ -28,9 +28,8 @@ const Dropdown = () => {
       </button>
 
       {isOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg  ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg  focus:outline-none">
           <div
-            className="py-1"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
@@ -38,7 +37,7 @@ const Dropdown = () => {
             {dropdownOptions.map((option) => (
               <a
                 href="#"
-                className="block px-4 py-2 text-sm  hover:bg-transparentContrastHover focus:bg-transparentContrastFocused"
+                className="block px-4 py-2 text-sm bg-bgPrimary hover:bg-transparentContrastHover focus:bg-transparentContrastFocused"
                 role="menuitem"
               >
                 {option}

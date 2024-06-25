@@ -1,3 +1,4 @@
+import Profile from "@/components/Profile/Profile";
 import Header from "@/components/ui/Header";
 import ReturnButton from "@/components/ui/ReturnButton";
 
@@ -6,8 +7,8 @@ export default function Home() {
     <>
       <Header />
       <ReturnButton> Вернуться к сотрудникам</ReturnButton>
-      <main>
-        <section></section>
+      <main className="flex w-full">
+        <Profile />
       </main>
     </>
   );
