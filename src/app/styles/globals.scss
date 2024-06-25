@@ -4,22 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root {
-  --background: #141414;
-  --font-family: "Poppins", sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #141414;
-    --font-family: "Poppins", sans-serif;
-  }
-}
-
 body {
-  font-family: var(--font-family);
-  background: var(--background);
-  color: white;
+  font-family: theme("fontFamily.poppins");
+  background: theme("colors.bgPrimary");
+  color: theme("colors.textPrimary");
 }
 
 .container {
