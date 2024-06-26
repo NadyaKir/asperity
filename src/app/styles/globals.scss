@@ -19,6 +19,25 @@ body {
   box-sizing: border-box;
 }
 
+.legend-item {
+  width: 100%;
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #363738;
+  border-radius: 16px;
+}
+
+.legend-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.legend-item:hover {
+  border-color: #e1e3e6;
+}
+
 @layer components {
   .button {
     @apply bg-accent font-poppins font-semibold py-2.5 leading-5 hover:bg-blueHover;
