@@ -18,7 +18,7 @@ export default function UserInfo() {
         </div>
       </div>
       <div className="col-start-2">
-        <h2 className="mb-4">Junior UI/UX designer</h2>
+        <p className="mb-4">Junior UI/UX designer</p>
         <div className="flex mb-[52px]">
           <p>Россия, Красноярск</p>
           <Dot color="#76787A" className="mx-2" />

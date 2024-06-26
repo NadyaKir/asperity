@@ -5,3 +5,18 @@ export const tabs = [
   { label: "Отпуск" },
   { label: "Оборудование" },
 ];
+
+export const legendData = [
+  {
+    label: "Доступно сейчас",
+    color: "#25824F",
+  },
+  {
+    label: "Запланировано",
+    color: "#FFB649",
+  },
+  {
+    label: "Использовано/недоступно",
+    color: "#DB4546",
+  },
+];
