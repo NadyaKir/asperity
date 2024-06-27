@@ -1,26 +1,11 @@
 import React, { useState } from "react";
 import { Dot } from "lucide-react";
 import { getDayWord } from "@/utils/getDayWord";
+import { legendData } from "../../../json";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Legend } from "chart.js";
 
 ChartJS.register(ArcElement, Legend);
-
-const legendData = [
-  {
-    label: "Доступно сейчас",
-    value: 32,
-    color: "#25824F",
-    hoverColor: "#25824F",
-  },
-  { label: "Запланировано", value: 8, color: "#FFB649", hoverColor: "#FFB649" },
-  {
-    label: "Использовано/недоступно",
-    value: 4,
-    color: "#DB4546",
-    hoverColor: "#DB4546",
-  },
-];
 
 const DoughnutChart = () => {
   const [activeIndex, setActiveIndex] = useState(null);

@@ -9,15 +9,21 @@ export const tabs = [
 export const legendData = [
   {
     label: "Доступно сейчас",
+    value: 32,
     color: "#25824F",
-  },
-  {
-    label: "Запланировано",
-    color: "#FFB649",
+    hoverColor: "#25824F",
   },
   {
     label: "Использовано/недоступно",
+    value: 4,
     color: "#DB4546",
+    hoverColor: "#DB4546",
+  },
+  {
+    label: "Запланировано",
+    value: 8,
+    color: "#FFB649",
+    hoverColor: "#FFB649",
   },
 ];
 
