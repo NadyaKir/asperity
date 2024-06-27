@@ -34,8 +34,9 @@ const Dropdown = () => {
             aria-orientation="vertical"
             aria-labelledby="options-menu"
           >
-            {dropdownOptions.map((option) => (
+            {dropdownOptions.map((option, index) => (
               <a
+                key={index}
                 href="#"
                 className="block px-4 py-2 text-sm bg-bgPrimary hover:bg-transparentContrastHover focus:bg-transparentContrastFocused"
                 role="menuitem"
