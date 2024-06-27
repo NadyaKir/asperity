@@ -20,3 +20,36 @@ export const legendData = [
     color: "#DB4546",
   },
 ];
+
+export const historyData = [
+  {
+    type: "Отгул",
+    dateStart: "03 марта 2023",
+    dateEnd: "23 марта 2023",
+    days: 20,
+  },
+  {
+    type: "Отпуск",
+    dateStart: "03 марта 2023",
+    dateEnd: "07 марта 2023",
+    days: 4,
+  },
+  {
+    type: "Отпуск",
+    dateStart: "03 марта 2023",
+    dateEnd: "07 марта 2023",
+    days: 4,
+  },
+  {
+    type: "Отпуск",
+    dateStart: "03 марта 2023",
+    dateEnd: "07 марта 2023",
+    days: 4,
+  },
+  {
+    type: "Отпуск",
+    dateStart: "03 марта 2023",
+    dateEnd: "07 марта 2023",
+    days: 4,
+  },
+];
