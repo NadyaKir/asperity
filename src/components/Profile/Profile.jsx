@@ -25,7 +25,7 @@ export default function Profile() {
           </div>
         </Card>
       </section>
-      <section className="col-span-3 row-span-1 grid grid-cols-3 gap-4">
+      <section className="col-span-3 row-span-1 grid grid-cols-3 gap-4 mb-[92px]">
         {tabValue === 0 && <MainInfo />}
         {tabValue === 1 && <LeaveInfo />}
         {tabValue === 2 && <EquipmentInfo />}

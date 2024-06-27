@@ -79,7 +79,7 @@ const DoughnutChart = () => {
   return (
     <div className="relative w-full mt-4">
       <div className="flex justify-center items-center">
-        <div className="w-[130px] h-[130px]">
+        <div className="w-[140px] h-[140px]">
           <Doughnut data={data} options={options} />
         </div>
       </div>
