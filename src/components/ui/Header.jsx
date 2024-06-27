@@ -6,15 +6,19 @@ import Dropdown from "./Dropdown";
 
 export default function Header() {
   return (
-    <header className="flex justify-between w-full py-6">
+    <header className="flex justify-between w-full py-[29px] px-4 md:py-6 md:px-0">
       <a href="">
-        <img src="/assets/Logo.svg" alt="logo" />
+        <img
+          className="w-40 h-10 md:w-48 md:h-12"
+          src="/assets/Logo.svg"
+          alt="logo"
+        />
       </a>
       <div className="flex items-center">
-        <Button className="button mr-2" variant="contained">
+        <Button className="button mr-2 hidden md:block" variant="contained">
           создать счет
         </Button>
-        <Button className="button mr-2" variant="contained">
+        <Button className="button mr-2 hidden md:block" variant="contained">
           корзина
         </Button>
         <Dropdown />

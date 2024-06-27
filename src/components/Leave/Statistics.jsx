@@ -5,7 +5,7 @@ import DoughnutChart from "./DoughnutChart";
 
 export default function Statistics() {
   return (
-    <div className="p-[30px]">
+    <div className="px-4 py-[30px] md:p-[30px]">
       <div className="flex items-center">
         <Heading extra="mr-2">Статистика</Heading>
         <Tooltip

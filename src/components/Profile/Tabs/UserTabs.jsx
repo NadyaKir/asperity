@@ -3,30 +3,37 @@ import { tabs } from "../../../../json";
 
 export default function UserTabs({ value, onTabChange }) {
   return (
-    <div className="inline-block mb-5 font-">
+    <div className="overflow-x-auto whitespace-nowrap">
       <Tabs
         value={value}
         onChange={onTabChange}
         aria-label="user tabs"
         sx={{
-          "& .MuiTabs-indicator": {
-            backgroundColor: value === -1 ? "transparent" : "#0047BB",
+          "& .MuiTabs-flexContainer": {
+            display: "flex",
+            overflowX: "auto",
+            whiteSpace: "nowrap",
+            "& .MuiTabs-indicator": {
+              backgroundColor: value === -1 ? "transparent" : "#0047BB",
+            },
+          },
+          "& .MuiTab-root": {
+            minWidth: "auto",
+            maxWidth: "none",
+            flexShrink: 0,
+            color: "#76787A !important",
+            fontWeight: "600",
+            padding: "10px 16px",
+            borderBottom: "1px solid #363738",
+            "&.Mui-selected": {
+              color: "#E1E3E6 !important",
+              borderBottom: "2px solid transparent",
+            },
           },
         }}
       >
         {tabs.map((tab, index) => (
-          <Tab
-            key={index}
-            label={tab.label}
-            sx={{
-              color:
-                index === value ? "#E1E3E6 !important" : "#76787A !important",
-              fontWeight: "600",
-              padding: "10px 16px",
-              borderBottom:
-                index !== value ? "1px solid #363738" : "2px solid transparent",
-            }}
-          />
+          <Tab key={index} label={tab.label} />
         ))}
       </Tabs>
     </div>
